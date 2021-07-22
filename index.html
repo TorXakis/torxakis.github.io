@@ -27,7 +27,7 @@
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
-<!--	a menu is also possible -->
+<!--	a menu is also possible-->
 <!--								<li>-->
 <!--								<a href="#">Dropdown</a>-->
 <!--									<ul>-->
@@ -47,8 +47,20 @@
 <!--										<li><a href="#">Nisl tempus</a></li>-->
 <!--									</ul>-->
 <!--								</li>-->
-								<li><a href="/userdocs/stable/">User Documentation</a></li>
-								<li><a href="/develdocs/stable/">Developer Documentation</a></li>
+
+								<li>
+								<a href="#">Documentation</a>
+									<ul>
+										<li><a href="/userdocs/stable/getting-started">Getting Started</a></li>
+								        <li><a href="/userdocs/stable/">User Documentation</a></li>
+								        <li><a href="/develdocs/stable/">Developer Documentation</a></li>
+									</ul>
+								</li>
+
+								<li><a href="#Downloads">Installation</a></li>
+
+								<li><a href="#footer">Contact</a></li>
+
 							</ul>
 						</nav>
 
@@ -194,55 +206,87 @@
 				</section>
 
 			<!-- Highlights -->
-				<section id="highlights" class="wrapper style3">
-					<div class="title">The Endorsements</div>
-					<div class="container">
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Aliquam diam consequat</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</div>
+
+				<section id="Downloads" class="wrapper style3">
+					<div class="title">Installation</div>
+					 <div class="container">
+					        <h3 id="windows">
+								Windows
+							</h3>
+							For Windows systems an installer is provided in the <code>TorXakis</code> github project's  <a href="https://github.com/TorXakis/TorXakis/releases">releases page</a>.
+
+							<h3 id="linux">
+								<br/>Linux
+							</h3>
+							We provide a <code>deb</code> package for Debian based systems (Debian, Ubuntu, etc).
+							Below we give instructions on how to install <code>TorXakis</code> on Ubuntu 18.04.
+
+							Download the latest <code>deb</code> package for <code>TorXakis</code> from  the <code>TorXakis</code> github project's  <a href="https://github.com/TorXakis/TorXakis/releases">releases page</a> and then run the following commands:
+
+						 	<pre><code style="font-family: monospace;"><br/>    apt-get update<br/>    apt-get install ./torxakis_0.9.0-ubuntu_18.04-amd64.deb -y
+							</code></pre>
+
+							The <code>deb</code> package was tested on Ubuntu version <code>16.04</code>, <code>17.10</code>, and <code>18.04</code>.
+
+							<h3 id="macos">
+								<br/>MacOS
+							</h3>
+							For macOS systems we provide a homebrew package. To install <code>TorXakis</code> run:
+
+							<pre><code style="font-family: monospace;"><br/>    brew tap torxakis/torxakis<br/>    brew install torxakis
+							</code></pre>
+
+							For more detailed instructions see the <a href="https://github.com/TorXakis/homebrew-TorXakis">Homebrew tap for TorXakis</a>.
+
+						   <!--					<div class="container">-->
+<!--						<div class="row aln-center">-->
+<!--							<div class="col-4 col-12-medium">-->
+<!--								<section class="highlight">-->
+<!--									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
+<!--									<h3><a href="#">Aliquam diam consequat</a></h3>-->
+<!--									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>-->
+<!--									<ul class="actions">-->
+<!--										<li><a href="#" class="button style1">Learn More</a></li>-->
+<!--									</ul>-->
+<!--								</section>-->
+<!--							</div>-->
+<!--							<div class="col-4 col-12-medium">-->
+<!--								<section class="highlight">-->
+<!--									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>-->
+<!--									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>-->
+<!--									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>-->
+<!--									<ul class="actions">-->
+<!--										<li><a href="#" class="button style1">Learn More</a></li>-->
+<!--									</ul>-->
+<!--								</section>-->
+<!--							</div>-->
+<!--							<div class="col-4 col-12-medium">-->
+<!--								<section class="highlight">-->
+<!--									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>-->
+<!--									<h3><a href="#">Mattis tempus lorem</a></h3>-->
+<!--									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>-->
+<!--									<ul class="actions">-->
+<!--										<li><a href="#" class="button style1">Learn More</a></li>-->
+<!--									</ul>-->
+<!--								</section>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+						 </div>-->
 				</section>
 
 			<!-- Footer -->
 				<section id="footer" class="wrapper">
-					<div class="title">The Rest Of It</div>
+					<div class="title">Contact</div>
 					<div class="container">
-						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
-							<p>
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-								Nam pharetra laoreet imperdiet volutpat etiam feugiat.
-							</p>
-						</header>
+<!--						<header class="style1">-->
+<!--							<h2>Ipsum sapien elementum portitor?</h2>-->
+<!--							<p>-->
+<!--								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />-->
+<!--								Nam pharetra laoreet imperdiet volutpat etiam feugiat.-->
+<!--							</p>-->
+<!--						</header>-->
+
 						<div class="row">
 							<div class="col-6 col-12-medium">
 
